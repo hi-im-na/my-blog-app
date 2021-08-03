@@ -1,0 +1,30 @@
+<div class="container">
+  <form [formGroup]="newPostForm" (ngSubmit)="savePost(newPostForm.value)">
+<!--    <div class="row mb-3">-->
+<!--      <label for="name" class="col-md-1">Your name: </label>-->
+<!--      <div class="col-md-11">-->
+<!--        <input formControlName="name" id="name" class="form-control" type="text" required/>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="row mb-3">-->
+<!--      <label for="email" class="col-md-1">Your email: </label>-->
+<!--      <div class="col-md-11">-->
+<!--        <input formControlName="email" id="email" class="form-control" type="text" required/>-->
+<!--      </div>-->
+<!--    </div>-->
+    <div class="row mb-3">
+      <label for="title" class="col-md-1">Title: </label>
+      <div class="col-md-11">
+        <input formControlName="title" id="title" class="form-control" type="text" required/>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="body" class="col-md-1">Content: </label>
+      <div class="col-md-11">
+        <input formControlName="body" id="body" class="form-control" type="text" required/>
+      </div>
+    </div>
+    <button class="btn btn-primary me-1">Confirm</button>
+    <button class="btn btn-warning me-1" (click)="cancel($event)">Cancel</button>
+  </form>
+</div>

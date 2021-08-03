@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Posts list</h2>
+  <div class="post-card col-md-8 card" *ngFor="let post of pageOfPosts">
+    <h5><a class="card-title" [routerLink]="['/posts', post.id]">{{post.title}}</a></h5>
+    <div class="card-body">
+      <p class="card-text">{{post.body | brief}}</p>
+      <post-author [userId]="post.user_id"></post-author>
+    </div>
+  </div>
+  <jw-pagination [items]="posts" (changePage)="onChangePage($event)"></jw-pagination>
+</div>

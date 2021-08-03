@@ -1,0 +1,30 @@
+.comment {
+  margin: 1rem;
+  padding: 1rem;
+  border: lightgrey solid 1px;
+}
+
+.comments {
+  margin-top: 2rem;
+}
+
+.no-comment {
+  margin: 1rem;
+  font-weight: 200;
+}
+
+.signature {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.comment-adding {
+  border: lightgray solid 1px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.post {
+  padding: 1rem;
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="post">
+    <h4>{{currentPost.title}}</h4>
+    <p>{{currentPost.body}}</p>
+    <post-author class="signature" [userId]="currentPost.user_id">
+    </post-author>
+    <button (click)="returnToHome()" class="btn btn-warning">Back to Home</button>
+  </div>
+
+  <div class="comments">
+    <h4>Comments</h4>
+    <div *ngIf="postComments.length <= 0" class="no-comment">There's no comment yet</div>
+    <div class="comment" *ngFor="let comment of postComments">
+      <p>{{comment.body}}</p>
+      <small class="signature">{{comment.name}} ({{comment.email}})</small>
+    </div>
+  </div>
+  <div class="comment-adding">
+    <h4>Add your comment:</h4>
+    <app-comment-form [postId]="currentPost.id"></app-comment-form>
+  </div>
+</div>

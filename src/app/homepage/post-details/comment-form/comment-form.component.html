@@ -1,0 +1,23 @@
+<div class="comment-form">
+  <form [formGroup]="commentForm" (ngSubmit)="saveComment(commentForm.value)" >
+    <div class="row mb-3">
+      <label for="comment-user-name" class="col-md-1">Your name: </label>
+      <div class="col-md-11">
+        <input formControlName="name" id="comment-user-name" class="form-control" type="text" required/>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="comment-user-email" class="col-md-1">Your email: </label>
+      <div class="col-md-11">
+        <input formControlName="email" id="comment-user-email" class="form-control" type="email" required/>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="comment-body" class="col-md-1">Comment: </label>
+      <div class="col-md-11">
+        <textarea formControlName="body" id="comment-body" class="form-control" required></textarea>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success m-1">Add</button>
+  </form>
+</div>
