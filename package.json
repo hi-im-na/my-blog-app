@@ -9,6 +9,10 @@
     "test": "ng test"
   },
   "private": true,
+  "engines": {
+    "node": "14.17.2",
+    "yarn": "1.22.11"
+  },
   "dependencies": {
     "@angular-devkit/build-angular": "^12.1.4",
     "@angular/animations": "~12.1.1",
