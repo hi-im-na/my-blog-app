@@ -3,7 +3,7 @@ import {Observable, of} from "rxjs";
 import {IPost} from "../models/IPost";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {catchError, map} from "rxjs/operators";
-import {IComment} from "../models/IComment";
+
 
 @Injectable({
   providedIn: 'root'
